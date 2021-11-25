@@ -1,0 +1,19 @@
+.mainlogo{
+    display: flex;
+    margin-left: 450px;
+    margin-top: 200px;
+    width: 40%;
+    height: 40%;
+    border: 2px solid black;
+}
+.logo{
+    padding: 40px;
+    padding-bottom: 70px;
+    border-radius: 10px;
+    width: 80%;
+}
+.onlineshopping{
+    position: relative;
+    right: 200px;
+    top: 270px;
+}

@@ -1,0 +1,112 @@
+.signup{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    bottom: 170px;
+    padding-top: 20px;
+    left: 730px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 40px 60px 0 rgba(131, 127, 127, 0.2),
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.signuppage{
+    background-color: gray;
+}
+.signupleftlogo{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    position: relative;
+    top: 200px;
+    left: 450px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.logoimage{
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.buttons {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tab-btn {
+    background-color: #a03037;
+    width: 22px;
+    height: 5px;
+    border-radius: 4px;
+    border: none;
+  }
+  .div{
+      margin-left: 30px;
+      padding-left: 20px;
+      font-size: 25px;
+      margin-top: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+  }
+.signinName{
+    padding-top: 20px;
+    margin-right: 150px;
+}
+.fullnamelabel{
+    margin-right: 150px;
+    font-size: 13px;
+}
+.fullname{
+    width: 200px;
+    height: 25px;
+}
+.emailform{
+    margin-top: 5px;
+}
+.labelemail{
+    margin-top: 15px;
+    margin-right: 163px;
+    font-size: 13px;
+}
+.signupemail{
+    width: 200px;
+    height: 25px;
+}
+.passwordform{
+    margin-top: 5px;
+}
+.labelpassword{
+    margin-right: 153px;
+    font-size: 13px;
+}
+.signuppassword{
+    width: 200px;
+    height: 25px;
+}
+.mobileform{
+    margin-top: 5px;
+}
+.labelmobilenumber{ 
+    margin-right: 120px;
+    font-size: 13px;
+}
+.signupmobilenumber{
+    width: 200px;
+    height: 25px;
+}
+.signupbutton{
+    margin-top: 30px;
+    width: 65%;
+    height: 33px;
+    background-color: rgb(165, 35, 35);
+   color: white;
+   border-radius: 4px;
+}
