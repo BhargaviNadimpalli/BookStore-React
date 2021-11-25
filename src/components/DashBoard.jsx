@@ -27,7 +27,7 @@ function DashBoard(){
                 {
                     bookarray.map((x) => (<Bookdetails book={x}/>))
                 }
-            </div>
+            </div>    
              <div>
                  <Footer/>
              </div>
