@@ -67,9 +67,9 @@
     font-family: roboto;
     bottom: 125px;
     left: 18px;
-    font-size: 13px;
+    font-size: 13px;              
 }
-.actual{
+.actual{      
     display: flex;
     position: relative;
     bottom: 160px;

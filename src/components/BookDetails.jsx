@@ -8,7 +8,7 @@ function Bookdetails(props){
         <div class="card-header">
             <img className="BookImg" src={BookImage} alt="BookImage" />
             </div>
-        <div class="card-footer">
+        <div class="card-footer">          
             <div>
                 <h4 class="bookName">{props.book.bookName}</h4>
                 <br/>
