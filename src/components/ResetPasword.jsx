@@ -14,7 +14,7 @@ function ForgotPassword(){
       }
     const Submit = function(){
         let statusEmail
-        if(!emailRegex.test(email))
+        if(!emailRegex.test(email))                
         {
           console.log("true")
           statusEmail = false
