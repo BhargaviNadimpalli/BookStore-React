@@ -1,0 +1,69 @@
+.header{
+    display: flex;
+    color: white;
+    width: 100%;
+}
+.toolbar{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: brown;
+}
+.headermenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: brown;
+    color: white;
+}
+.headerbooklogo{
+    margin-left: 120px;
+}
+.bookstoreheader{
+    position: relative;
+    bottom: 7px;
+}
+.search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border: #d5d2d2;
+    border-radius: 5px;
+    width: 105%;
+    height: 35px;
+    position: relative;
+    right: 330px;
+}
+.profilelogo{
+    display: flex;
+    position: relative;
+    right: 200px;
+    top: 37px;
+    width: 20px;
+    margin-left: 130px;
+    background-color: white;
+    border-radius: 15px;
+}
+.profile{
+    display: flex;
+    position: relative;
+    top: 26px;
+    right: 75px;
+    font-size: 11px;
+}
+.cartlogo{
+    display: flex;
+    width: 18px;
+    position: relative;
+    bottom: 20px;
+    margin-right: 200px;
+}
+.cart{
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    font-size: 11px;
+}

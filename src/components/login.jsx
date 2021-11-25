@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import '../css/login.css'
 import cartimage from '../assets/cartlogo.png'
 import { signIn } from "../services/UserService";
+import { useHistory } from "react-router-dom";
 const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 const passwordRegex = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/
 function Login(props) {
+    let history = useHistory()
     const [email, setEmail] = React.useState("")
      const [password, setPassword] = React.useState("")
  
@@ -51,15 +53,21 @@ const submit = function()
     console.log(obj) 
     signIn(obj).then(function(response){
         console.log(response)
-       let tokenArray = response.data.UserId
+       let tokenArray = response.data.result._Id
        localStorage.setItem("userId", tokenArray)
-       localStorage.setItem("Token", response.data.tokenString)
+       localStorage.setItem("Token", response.data.result.accessToken)
+       if(response.status==200){
+       history.push("/Home")
+     }
     })
     .catch(function(error){
       console.log(error)  
     })
 }
 }
+  const gotoforgotpassword = function(){
+    history.push("/forgotpassword")
+  }
     const click=function(){
         props.listentosignup(true)
     }
@@ -94,7 +102,7 @@ const submit = function()
                   label = "password" placeholder = "password" type = "text"
                   className = "password" onChange = {takePassword}/>
                   </div>
-                  <button className = "passwordbutton">Forgot Password?</button>
+                  <button className = "passwordbutton" onClick = {gotoforgotpassword}>Forgot Password?</button>
                   <button type = "button" onClick = {submit} className = "loginbutton">Login</button>
                   <div className="or">
                     <h5>-------------OR--------------</h5>

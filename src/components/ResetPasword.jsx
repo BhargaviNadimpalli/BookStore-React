@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
 function ForgotPassword(){
+  let history = useHistory()
     const[email, setEmail] = React.useState("")
     const takeEmail = function(event){
         setEmail(event.target.value)
@@ -39,7 +40,9 @@ function ForgotPassword(){
       }
     }
 
-
+    const gotocreateaccount = function(){
+      history.push("/")
+    }
     return(
         <div className="forgotpassword">           
            <div className="header"> 
@@ -64,7 +67,7 @@ function ForgotPassword(){
             </div>
             <div class="createacount">
             <div class="createacountbtn">
-                <button className="buttontwo"><h2>Create Account</h2></button>
+                <button className="buttontwo" onClick = {gotocreateaccount}><h2>Create Account</h2></button>
             </div>
             </div>
             </div>

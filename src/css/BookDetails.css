@@ -1,0 +1,79 @@
+.bookdisplay{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 240px;
+    border: 1px solid #d5d2d2;
+    position: relative;
+    top: 100px;
+    left: 150px;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+.card-header{
+    background-color: rgb(238, 235, 235);
+}
+.BookImg{
+   width: 90px;
+   height: 120px;
+   padding: 10px;
+}
+.bookName{
+    display: flex;
+    position: relative;
+    bottom: 24px;
+    left: 15px;
+    font-family: Roboto, Regular;
+    font-size: 20px;
+}
+.authorname{
+      display: flex;
+      position: relative;
+      bottom: 90px;
+      left: 18px;
+      font-size: 13px;
+      color: gray;
+}
+.ratings{
+    display: flex;
+    position: relative;
+    bottom: 100px;
+    left: 19px;
+    width: 38px;
+    height: 18px;
+    border-radius: 3px;
+    background-color: green;
+}
+/* .starlogo{
+    
+    margin-left: 10px;
+} */
+.rating{
+    font-size: 12px;
+    color: white;
+    margin-left: 10px;
+}
+.numbers{
+    display: flex;
+    position: relative;
+    bottom: 118px;
+    left: 60px;
+    color: gray;
+    font-size: 12px;
+}
+.discount{
+    display: flex;
+    position: relative;
+    font-family: roboto;
+    bottom: 125px;
+    left: 18px;
+    font-size: 13px;
+}
+.actual{
+    display: flex;
+    position: relative;
+    bottom: 160px;
+    font-size: 12px;
+    left: 70px;
+    text-decoration: line-through;
+}

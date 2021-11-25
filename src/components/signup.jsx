@@ -2,11 +2,13 @@ import React from "react";
 import '../css/signup.css'
 import cartimage from '../assets/cartlogo.png'
 import { signUp } from "../services/UserService";
+import { useHistory } from "react-router-dom";
 const nameRegex = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/
 const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 const passwordRegex = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/
 const mobileNumberRegex = /^[+]?(\d{1,2})?[\s.-]?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
 function SignUp(props){
+     let history = useHistory()
      const [fullName, setFullName] = React.useState("")
      const [email, setEmail] = React.useState("")
      const [password, setPassword] = React.useState("")
@@ -86,6 +88,9 @@ function SignUp(props){
                 console.log(obj)
                 signUp(obj).then(function(response){
                     console.log(response)
+                    if(response.status==200){
+                       history.push("/")
+                    }
                 })
                 .catch(function(error){                
                     console.log(error)               
