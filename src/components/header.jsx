@@ -5,7 +5,7 @@ import { IconButton, Button } from "@material-ui/core";
 import { Icon, InputBase } from "@mui/material";
 import Toolbar from "@material-ui/core/Toolbar";
 import '../css/Header.css'
-import Profile from '../assets/profile.svg'
+import Profile from '../assets/profilelogo.jpg'
 import Cartlogo from '../assets/supermarket.svg'
 function Header(){
     return(

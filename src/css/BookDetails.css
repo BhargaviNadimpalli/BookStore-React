@@ -44,10 +44,12 @@
     border-radius: 3px;
     background-color: green;
 }
-/* .starlogo{
-    
-    margin-left: 10px;
-} */
+.starlogo{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    margin-top: 3px
+}
 .rating{
     font-size: 12px;
     color: white;
