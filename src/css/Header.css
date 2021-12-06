@@ -37,10 +37,10 @@
     position: relative;
     right: 330px;
 }
-.profilelogo{
+.mainprofilelogo{
     display: flex;
     position: relative;
-    right: 200px;
+    right: 193px;
     top: 37px;
     width: 20px;
     margin-left: 130px;
@@ -66,4 +66,71 @@
     bottom: 30px;
     display: flex;
     font-size: 11px;
+}
+.profilebox{
+        position: fixed;
+        width: 200px;
+        height: 220px;
+        left: 1150px;
+        top: 63px;
+        background-color: white;
+        box-shadow: 0 40px 60px 0 rgba(131, 127, 127, 0.2),
+                      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profilelogo{
+    display: flex;
+    position: relative; 
+    left: 20px;   
+    bottom: 8px;
+}
+.profilelogoone{
+    display: flex;
+    position: relative;
+    bottom: 45px;
+    left: 20px;
+}
+.profilelogotwo{
+    display: flex;
+    position: relative;
+    bottom: 85px;
+    left: 20px;
+    width: 26px;
+}
+.bhargavi{
+    display: flex;
+    position: relative;
+    left: 23px;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+}
+.profilenames{
+    display: flex;
+    position: relative;
+    left: 65px;
+    bottom: 45px;
+}
+.profilenameone{
+    display: flex;
+    position: relative;
+    left: 65px;
+    bottom: 85px;
+}
+.profilenametwo{
+    display: flex;
+    position: relative;
+    left: 65px;
+    bottom: 128px;
+}
+.loginsignupbutton{
+    display: flex;
+    position: relative;
+    left: 20px;
+    bottom: 130px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 130px;
+    height: 40px;
+    border: 1px solid red;
 }

@@ -2,29 +2,51 @@ import React from "react";
 import BookImage from '../assets/bookimage.png'
 import '../css/BookDescription.css'
 import { useHistory } from "react-router";
-import { useLocation } from "react-router";
 import Header from "./header";
 import Footer from "./footer";
-import { getbooks } from "../services/Bookservices";
+import { Addtocart, addtowishlist } from "../services/Bookservices";
 export default function Bookdescription(props){
-    let history = useHistory()
     
-     const gotohomepage = function(){
-        history.push("/Home")
-     }
+    const addtocartpage = function(){
+        let obj = {
+        BookId: props.singlebook.BookId,
+        UserId: parseInt(localStorage.getItem("userId"))
+        }
+        Addtocart(obj).then(function(response){
+            console.log(response.data)
+        })
+        .catch(function(error){
+            console.log(error)
+        })
+    }
+    const AddToWishlist = function(){
+        let obj = {
+            BookId: props.singlebook.BookId,
+            UserId: parseInt(localStorage.getItem("userId"))
+            }
+            addtowishlist(obj).then(function(response){
+                console.log(response.data)
+            })
+            .catch(function(error){
+                console.log(error)
+            })
+    }
     return(
         <div className = "descriptionpage" >
             <Header/>
         <p className="paths">
-             <button onClick = {gotohomepage} className = "gotohome"> Home / </button><span id="pathtobook">Book</span>
+             <button className = "gotohome"> Home / </button><span id="pathtobook">Book</span>
              </p>
 
         <div className="imagebox">
         <img src={BookImage} alt="Image" className = "booklogo" />
          </div>
         <div className="tagbuttons">
-        <button id="addtobag" >ADD TO BAG</button>
-        <button id="wishlist">❤ WISHLIST</button>
+           
+        <button id="addtobag" onClick = {addtocartpage}>ADD TO BAG</button> 
+       
+       <button id="wishlist" onClick = {AddToWishlist}>❤ WISHLIST</button> 
+       
         </div>
         <div className = "description">
              <div className="detailsofbook">

@@ -5,8 +5,9 @@ import './App.css';
 //import Resetpassword from './components/ResetPasword';
 //import SignInAndSignUp from './components/SignUpandSignIn';
 import Router from './Router/router';
-//import Header from './components/header';
+import Header from './components/header';
 import DashBoard from './components/DashBoard';
+import CartList from './components/Cart';
 function App() {
   return (
     <div className="App">

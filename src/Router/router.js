@@ -5,6 +5,8 @@ import SignUp from "../components/signup";
 import ForgotPassword from "../components/ResetPasword";
 import DashBoard from '../components/DashBoard'
 import Bookdescription from "../components/BookDescription";
+import CartList from "../components/Cart";
+import Wishlist from "../components/WishList";
 function Router(){
     return(
         <BrowserRouter>
@@ -14,6 +16,8 @@ function Router(){
                   <Route path = "/forgotpassword" component = {ForgotPassword}/>
                   <Route path = "/Home" component = {DashBoard} />
                   <Route path = "/Description" component = {Bookdescription} />
+                  <Route path = "/Cart" component = {CartList} />
+                  <Route path = "/Wishlist" component = {Wishlist} />
              </Switch>
         </BrowserRouter>
     )
